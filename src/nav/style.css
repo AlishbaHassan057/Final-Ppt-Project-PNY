@@ -1,0 +1,16 @@
+    .navv{
+        align-self: center !important; 
+        background: rgb(32, 32, 32);
+     
+
+    }
+.btn {
+    background: linear-gradient(to right top, #A52FF1, #BB2AF7, #CC26FC, #D025FC) !important;
+color: white; /
+}
+
+.brand img{
+    display: inline;
+width:50%;
+}
+
