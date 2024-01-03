@@ -1,0 +1,15 @@
+.listed{
+   list-style-type: none
+}
+.listed {
+  list-style: none;
+  padding: 0;
+}
+
+.listed li {
+  margin-bottom: 10px; 
+}
+
+.list-item-text {
+  margin-left: 18px; 
+}
