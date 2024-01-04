@@ -33,7 +33,7 @@ const HomePage = () => {
                     </div>
                     <div className="carousel-item position-relative">
                         <div className="carousel-content-wrapper">
-                            <img src="https://www.sassymamasg.com/wp-content/uploads/2020/02/birthday-treats-singapore-2020-deals-freebies-discounts-1024x797.jpg" className="d-block w-100 h-50" alt="Second Slide" />
+                            <img src="http://swankeventsboston.com/wp-content/uploads/2019/07/swank-events-boston-home-1-1.png" className="d-block w-100 h-50" alt="Second Slide" />
                             <div className="col-lg-6 carousel-caption fw-bold d-none d-md-block position-absolute top-2 start-0">
                                 <h1 className="text-left display-4 fw-bold">
                                     Let's Celebrate Your Events Festival Party With Us</h1>
@@ -52,7 +52,7 @@ const HomePage = () => {
                     </div>
                     <div className="carousel-item position-relative">
                         <div className="carousel-content-wrapper">
-                            <img src="https://www.telesambre.be/sites/default/files/2023-05/bad-food-court-intro_0.png" className="d-block w-100 h-50" alt="Third Slide" />
+                            <img src="https://robertsevents.com/wp-content/uploads/2020/10/wsi-imageoptim-Virtual-event-for-main-page.jpg" className="d-block w-100 h-50" alt="Third Slide" />
                             <div className="col-lg-6 carousel-caption fw-bold d-none d-md-block position-absolute top-2 start-0">
                                 <h1 className="text-left display-4 fw-bold">
                                     Let's Celebrate Your Events Festival Party With Us</h1>

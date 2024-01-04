@@ -1,3 +1,11 @@
+:root {
+  --root-color: #DA22FF;
+}
+.b{
+  color: var(--root-color);
+  font-weight: bold;
+}
+
 .listed{
    list-style-type: none
 }
@@ -12,4 +20,15 @@
 
 .list-item-text {
   margin-left: 18px; 
+}
+
+.box{
+  background: #F3F1F5 !important;
+
+
+}
+.btn {
+    background: linear-gradient(to right top, #A52FF1,#A52FF1, #BB2AF7, #CC26FC, #D025FC) !important;
+color: white; 
+font-size: 14.5px !important;
 }

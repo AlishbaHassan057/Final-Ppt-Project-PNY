@@ -1,0 +1,11 @@
+.pro {
+    width: 70%;
+}
+.exp-img {
+  background-image: url("https://templatekit.jegtheme.com/evenizer/wp-content/uploads/sites/146/2021/08/people-partying-at-a-concert-e1630316489959.jpg");
+  background-size: cover; /* Adjust as needed */
+  background-position: center center; /* Adjust as needed */
+  background-repeat: no-repeat;
+  height:30vh;
+  width: 100%;
+}

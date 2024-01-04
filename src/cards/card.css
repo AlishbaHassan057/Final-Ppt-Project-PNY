@@ -1,0 +1,6 @@
+:root {
+  --root-color: #DA22FF;
+}
+.services{
+    color: var(--root-color);
+}
