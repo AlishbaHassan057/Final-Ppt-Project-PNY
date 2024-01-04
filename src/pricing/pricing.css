@@ -1,0 +1,32 @@
+.pricing {
+    background: #F3F1F5;}
+    .crd{
+        height: 25rem;
+        width: 15rem;
+        background: yellow;
+    }
+    :root {
+  --root-color: #9733EE;
+
+}
+.crd{
+    background: var(--root-color);
+    color: white;
+}
+.prices{
+    color: var(--root-color);
+}
+
+.p{
+    color: #FFF338;
+}
+    .crds{
+        height: 25rem;
+        width: 15rem;
+    }
+    .gp{
+        margin-top: 5rem !important;
+    }
+    .dt{
+        margin-top: -3rem!important;
+    }

@@ -5,6 +5,7 @@ import Cards from "./cards/Cards"
 import Experience from "./experience/Experience"
 import Logo from "./logo/Logo"
 import Team from "./team/Team"
+import Pricing from "./pricing/Pricing"
 
 
 
@@ -20,6 +21,7 @@ function App() {
       <Experience />
       <Logo />
       <Team />
+      <Pricing />
 
 
 
