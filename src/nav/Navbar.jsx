@@ -20,7 +20,7 @@ const Navbar = () => {
                             <li>SERVICES</li>
                             <li>PAGE</li>
                             <li>BLOG</li>
-                            <li>CONTACT US</li>
+
                         </ul>
                     </div>
                     <div className="d-flex align-items-center justify-content-between mb-4 mt-4 gap-4">

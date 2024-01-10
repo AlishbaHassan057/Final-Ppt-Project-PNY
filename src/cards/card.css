@@ -4,3 +4,16 @@
 .services{
     color: var(--root-color);
 }
+body{
+  font-family: 'Manrope' , 'sans-serif' ;
+}
+.about-card {
+  height: 320px;
+  width: 350px !important;
+}
+.unstyled-link {
+    text-decoration: none; 
+    color: var(--root-color); 
+    font-weight: bold;
+   
+}

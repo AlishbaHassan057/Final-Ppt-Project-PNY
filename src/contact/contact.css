@@ -1,0 +1,24 @@
+:root {
+  --root-color: #DA22FF;
+}
+.contact-logo{
+    color: var(--root-color);
+    align-self: center;
+}
+.contact-card{
+      height: 38rem;
+      margin-top: -5rem;
+}
+.contact-btn{
+  width: 11rem !important;
+  padding-top: 0.7rem !important;
+   padding-bottom: 0.7rem !important;
+}
+.contact-msg{
+  color:#DB45FF ;
+}
+body{
+  font-family: 'Manrope' , 'sans-serif' ;
+}
+
+

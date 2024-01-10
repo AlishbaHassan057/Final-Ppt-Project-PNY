@@ -1,6 +1,6 @@
     .navv{
         align-self: center !important; 
-        background: rgb(32, 32, 32);
+        background: #030F1B;
      
 
     }
@@ -12,5 +12,11 @@ color: white; /
 .brand img{
     display: inline;
 width:50%;
+}
+.a{
+    display: none;
+}
+body{
+  font-family: 'Manrope' , 'sans-serif' ;
 }
 

@@ -6,6 +6,10 @@ import Experience from "./experience/Experience"
 import Logo from "./logo/Logo"
 import Team from "./team/Team"
 import Pricing from "./pricing/Pricing"
+import Contacts from "./contact/Contacts"
+import Footer from "./footer/Footer"
+import PasteBoard from "./pasteboard/PasteBoard"
+
 
 
 
@@ -16,12 +20,16 @@ function App() {
     <>
       <Navbar />
       <HomePage />
+      <PasteBoard />
       <About />
       <Cards />
       <Experience />
       <Logo />
       <Team />
       <Pricing />
+      <Contacts />
+      <Footer />
+
 
 
 
