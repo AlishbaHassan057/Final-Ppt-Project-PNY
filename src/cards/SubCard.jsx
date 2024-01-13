@@ -23,9 +23,10 @@ const SubCard = () => {
 
     return (
         <>
+
             {cardData.map((card) => (
-                <div key={card.id} className="col-lg-4 mt-5">
-                    <div className="card about-card ps-5">
+                <div key={card.id} className="col-lg-4 mt-4">
+                    <div className="card about-card ps-5 border-none">
                         <div className=" mt-5">
                             {React.createElement(iconComponents[card.icon], { size: 38, style: { color: card.color } })}
                         </div>
@@ -36,7 +37,9 @@ const SubCard = () => {
 
                         </a>
                     </div>
+
                 </div>
+
             ))}
         </>
     );

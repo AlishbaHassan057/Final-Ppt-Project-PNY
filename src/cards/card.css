@@ -9,11 +9,15 @@ body{
 }
 .about-card {
   height: 320px;
-  width: 350px !important;
+  width: 330px !important;
+  border: none !important;
 }
 .unstyled-link {
     text-decoration: none; 
     color: var(--root-color); 
     font-weight: bold;
    
+}
+.our-services{
+  color: var(--root-color);
 }

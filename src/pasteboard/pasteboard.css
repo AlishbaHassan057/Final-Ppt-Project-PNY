@@ -1,0 +1,17 @@
+.wed p {
+    margin-left: 2.5rem !important;
+}
+.wed-head{
+    margin-right: 6rem !important;
+}
+.wed-card{
+    height: 13rem !important;
+    width: 23rem !important;
+    align-self: center !important;
+}
+:root {
+  --root-color: #DA22FF;
+}
+.wedding{
+    color: var(--root-color);
+}

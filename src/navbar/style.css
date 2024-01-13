@@ -1,8 +1,8 @@
     .navv{
         align-self: center !important; 
-        background: #030F1B;
-     
-
+        position: absolute;
+        z-index: 22222;
+       border-bottom: 0.05px solid gray;
     }
 .btn {
     background: linear-gradient(to right top, #A52FF1, #BB2AF7, #CC26FC, #D025FC) !important;
@@ -19,4 +19,3 @@ width:50%;
 body{
   font-family: 'Manrope' , 'sans-serif' ;
 }
-
