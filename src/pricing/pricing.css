@@ -1,17 +1,9 @@
-.pricing {
-    background: #F3F1F5;}
-    .crd{
-        height: 25rem;
-        width: 15rem;
-        background: yellow;
-    }
-    :root {
-  --root-color: #9733EE;
 
-}
-.crd{
-    background: var(--root-color);
+.card-1{
+    background:#9733EE;
     color: white;
+     height: 25rem;
+        width: 15rem;
 }
 .prices{
     color: var(--root-color);

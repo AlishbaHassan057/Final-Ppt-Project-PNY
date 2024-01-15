@@ -15,3 +15,9 @@
 .wedding{
     color: var(--root-color);
 }
+.pasteboard-cont {
+    display: block;
+    width: 80%;
+    margin: auto;
+    gap: 3rem;
+}

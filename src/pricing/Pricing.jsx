@@ -1,27 +1,35 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './pricing.css';
 import { FaCheckCircle } from "react-icons/fa";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Pricing = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true, // Set to true if you want the animation to occur only once
+        });
+    }, []);
+
     return (
         <>
             <div className="pricing container-fluid mb-5">
-                <div className="container row text-center mx-auto mt-5">
+                <div className="container row text-center mx-auto mt-5" >
                     <div className="mt-5">
-                        <h5 className="services mt-5">Pricing & Plan</h5>
-                        <h1>Services Price</h1>
+                        <h5 className="services mt-5 fw-bold" data-aos="fade-down">Pricing & Plan</h5>
+                        <h1 className='fw-bold' data-aos="fade-down">Services Price</h1>
                         <div className="col-lg-7 text-secondary text-center mx-auto no-gutters">
-                            <p className='col-lg-10  text-center mx-auto'>
+                            <p className='col-lg-10  text-center mx-auto' data-aos="fade-down">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                             </p>
                         </div>
                     </div>
                     {/* Cards */}
-                    {/* card-1 */}
                     <div className="container d-flex align-items-center justify-content-around" style={{ width: '82%' }}>
-                        <div className="col-lg-3 mx-auto">
-                            <div className="crd dt mb-5 card d-flex flex-column align-items-center justify-content-center gap-2 mx-auto">
+                        {/* card-1 */}
+                        <div className="col-lg-3 mx-auto" data-aos="fade-up">
+                            <div className="card-1 dt mb-5 card d-flex flex-column align-items-center justify-content-center gap-2 mx-auto">
                                 <h4 className='mt-0'>BIRTHDAY PARTY</h4>
                                 <h2 className='p'>$145</h2>
                                 <ul className='mb-5 list-unstyled'>
@@ -48,8 +56,9 @@ const Pricing = () => {
                                 </ul>
                             </div>
                         </div>
+
                         {/* card-2 */}
-                        <div className="col-lg-3 mx-auto">
+                        <div className="col-lg-3 mx-auto" data-aos="fade-down">
                             <div className="crds gp mb-5 card d-flex flex-column align-items-center justify-content-center gap-2 mx-auto">
                                 <h4>WEDDING PARTY</h4>
                                 <h2 className='prices'>$850</h2>
@@ -78,7 +87,7 @@ const Pricing = () => {
                             </div>
                         </div>
                         {/* card-3 */}
-                        <div className="col-lg-3 mx-auto">
+                        <div className="col-lg-3 mx-auto" data-aos="fade-up" data-aos-delay="200">
                             <div className="crds dt mb-5 card d-flex flex-column align-items-center justify-content-center gap-2 mx-auto">
                                 <h4>PARTY EVENTS</h4>
                                 <h2 className='prices'>$650</h2>
@@ -107,8 +116,8 @@ const Pricing = () => {
                             </div>
                         </div>
                         {/* card-4 */}
+                        <div className="col-lg-3 mx-auto" data-aos="fade-down">
 
-                        <div className="col-lg-3 mx-auto">
                             <div className="crds gp  mb-5 card d-flex flex-column align-items-center justify-content-center gap-2 mx-auto">
                                 <h4>BIRTHDAY PARTY</h4>
                                 <h2 className='prices'>$1200</h2>

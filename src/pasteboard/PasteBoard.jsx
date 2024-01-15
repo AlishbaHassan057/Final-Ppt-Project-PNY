@@ -9,7 +9,7 @@ import { FaCakeCandles } from "react-icons/fa6";
 const PasteBoard = () => {
     return (
         <>
-            <div className="container mt-5 mb-5">
+            <div className="pasteboard-cont container mt-5 mb-5">
                 <div className="row">
                     {/* 1ST */}
                     <div className="col-lg-4">

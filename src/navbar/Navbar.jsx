@@ -6,7 +6,6 @@ import './style.css';
 const Navbar = () => {
     return (
         <>
-
             <div className="container-fluid navv d-flex gap-0 align-items-center justify-content-between text-white px-5">
                 <div className="brand mb-4 mt-3 p-0 m-0">
                     <img src='https://templatekit.jegtheme.com/evenizer/wp-content/uploads/sites/146/2021/08/Evenizer-logo-2.png' />

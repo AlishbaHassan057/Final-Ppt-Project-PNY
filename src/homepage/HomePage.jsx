@@ -14,9 +14,10 @@ const HomePage = () => {
         <>
             <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
+                    {/* 1ST SLIDE */}
                     <div className="carousel-item active position-relative">
-                        <div className="carousel-content-wrapper"> <img src="http://swankeventsboston.com/wp-content/uploads/2019/07/swank-events-boston-home-1-1.png" className="d-block w-100 h-50" alt="Second Slide" />
-
+                        <div className="carousel-content-wrapper">
+                            <img src="http://swankeventsboston.com/wp-content/uploads/2019/07/swank-events-boston-home-1-1.png" className="d-block w-100 h-50" alt="Second Slide" />
                             <div className="col-lg-6 carousel-caption fw-bold d-none d-md-block position-absolute top-2 start-0">
                                 <h1 className="text-left display-4 fw-bold">
                                     Let's Celebrate Your Events Festival Party With Us</h1>
@@ -35,9 +36,10 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
+                    {/* 2ND SLIDE */}
                     <div className="carousel-item position-relative">
                         <div className="carousel-content-wrapper">
-                            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D" className="d-block w-100" alt="First Slide h-50" />
+                            <img src="https://images7.alphacoders.com/133/1339451.png" className="d-block w-100" alt="First Slide h-50" />
 
                             <div className="col-lg-6 carousel-caption fw-bold d-none d-md-block position-absolute top-2 start-0">
                                 <h1 className="text-left display-4 fw-bold">
@@ -51,13 +53,16 @@ const HomePage = () => {
                                 <div className="button2">  <button className='btns d-flex align-items-center justify-content-around gap-3'>
                                     <div className="watch"> <MdOutlinePlayCircle size={45} /></div>
 
-                                    <div className="w fw-normal">WATCH INTRO</div> </button></div>
+                                    <div className="w fw-normal">WATCH INTRO</div>
+                                </button>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    {/* 3RD SLIDE */}
                     <div className="carousel-item position-relative">
                         <div className="carousel-content-wrapper">
-                            <img src="https://robertsevents.com/wp-content/uploads/2020/10/wsi-imageoptim-Virtual-event-for-main-page.jpg" className="d-block w-100 h-50" alt="Third Slide" />
+                            <img src="https://www.aicaevents.com/wp-content/uploads/2020/09/Garden_birthday_party_decoration_by_aicaevents_TPG1closeup.jpg" className="d-block w-100 h-50" alt="Third Slide" />
                             <div className="col-lg-6 carousel-caption fw-bold d-none d-md-block position-absolute top-2 start-0">
                                 <h1 className="text-left display-4 fw-bold">
                                     Let's Celebrate Your Events Festival Party With Us</h1>
