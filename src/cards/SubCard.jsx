@@ -26,7 +26,9 @@ const SubCard = () => {
 
             {cardData.map((card) => (
                 <div key={card.id} className="col-lg-4 mt-4">
-                    <div className="card about-card ps-5 border-none">
+                    <div className="card about-card ps-5 border-none" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                         <div className=" mt-5">
                             {React.createElement(iconComponents[card.icon], { size: 38, style: { color: card.color } })}
                         </div>

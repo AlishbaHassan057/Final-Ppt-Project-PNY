@@ -12,12 +12,12 @@ AOS.init();
 const HomePage = () => {
     return (
         <>
-            <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel position-relative">
-                <div className="carousel-inner position-relative">
+            <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel ">
+                <div className="carousel-inner ">
                     {/* 1ST SLIDE */}
-                    <div className="carousel-item active position-relative">
-                        <div className="carousel-content-wrapper ">
-                            <img src="http://swankeventsboston.com/wp-content/uploads/2019/07/swank-events-boston-home-1-1.png" className=" position-relative carousel-img d-block w-100 h-50" alt="Second Slide" />
+                    <div className="carousel-item active ">
+                        <div className="carousel-content-wrapper">
+                            <img src="http://swankeventsboston.com/wp-content/uploads/2019/07/swank-events-boston-home-1-1.png" className=" carousel-img d-block w-100 h-50" alt="Second Slide" />
                             <div className="col-lg-6 carousel-caption fw-bold d-none d-md-block position-absolute top-2 start-0">
                                 <h1 className="text-left display-4 fw-bold" data-aos="fade-right">
                                     Let's Celebrate Your Events Festival Party With Us</h1>
@@ -37,7 +37,7 @@ const HomePage = () => {
                         </div>
                     </div>
                     {/* 2ND SLIDE */}
-                    <div className="carousel-item position-relative">
+                    <div className="carousel-item">
                         <div className="carousel-content-wrapper">
                             <img src="https://images7.alphacoders.com/133/1339451.png" className="carousel-img d-block w-100 h-100" alt="First Slide h-50" />
 
@@ -59,7 +59,7 @@ const HomePage = () => {
                         </div>
                     </div>
                     {/* 3RD SLIDE */}
-                    <div className="carousel-item position-relative">
+                    <div className="carousel-item">
                         <div className="carousel-content-wrapper">
                             <img src="https://www.aicaevents.com/wp-content/uploads/2020/09/Garden_birthday_party_decoration_by_aicaevents_TPG1closeup.jpg" className="carousel-img d-block w-100 h-100" alt="Third Slide" />
                             <div className="col-lg-6 carousel-caption fw-bold d-none d-md-block position-absolute top-2 start-0">

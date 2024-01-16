@@ -53,3 +53,9 @@ input::placeholder {
     color:  #CC26FC;
     font-weight: bold !important;
   }
+  .facebook{
+    margin-left: -99px !important;
+  }
+  button {
+    border: 0 !important;
+}

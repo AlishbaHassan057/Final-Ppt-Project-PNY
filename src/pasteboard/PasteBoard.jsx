@@ -1,18 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { GiGlobeRing } from "react-icons/gi";
 import './pasteboard.css';
 import { GiGlassCelebration } from "react-icons/gi";
-
 import { FaCakeCandles } from "react-icons/fa6";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 
 const PasteBoard = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    }, []);
     return (
         <>
-            <div className="pasteboard-cont container mt-5 mb-5">
+            <div className="pa pasteboard-cont container mt-4 mb-5">
                 <div className="row">
                     {/* 1ST */}
-                    <div className="col-lg-4">
+                    <div className="pa col-lg-4" data-aos="fade-up-right" >
                         <div className="card wed-card shadow border-0">
                             <div className="wed-head d-flex align-items-center justify-content-center gap-3 mt-4">
                                 <div className="ring">
@@ -28,7 +36,7 @@ const PasteBoard = () => {
                         </div>
                     </div>
                     {/* 2ND */}
-                    <div className="col-lg-4">
+                    <div className="col-lg-4" data-aos="flip-up">
                         <div className="card wed-card shadow border-0">
                             <div className="wed-head d-flex align-items-center justify-content-center gap-3 mt-4">
                                 <div className="ring">
@@ -48,7 +56,7 @@ const PasteBoard = () => {
 
                     </div>
                     {/* 3RD */}
-                    <div className="col-lg-4">
+                    <div className="col-lg-4" data-aos="fade-up-left">
                         <div className="card wed-card shadow border-0">
                             <div className="wed-head d-flex align-items-center justify-content-center gap-3 mt-4">
                                 <div className="ring">

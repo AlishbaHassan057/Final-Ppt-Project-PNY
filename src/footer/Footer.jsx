@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
 import './footer.css'
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+
+
+
 
 const Footer = () => {
     const [email, setEmail] = useState('');
@@ -46,7 +53,7 @@ const Footer = () => {
                         <p>FAQ</p>
                     </div>
                     {/* FOURTH */}
-                    <div className="col-lg-3 news">
+                    <div className="col-lg-3 footer-logo mt-5">
                         <h5 className='foot-bottom news'>NEWSLETTER</h5>
                         <form className="d-flex mt-3">
                             <input
@@ -54,10 +61,22 @@ const Footer = () => {
                                 value={email}
                                 placeholder='Your Email Address'
                                 onChange={(e) => setEmail(e.target.value)}
-                                className='p-2 rounded-start'
+                                className='py-2 px-1 rounded-start border-0'
                             />
-                            <button className='btn rounded-end p-2' type="submit">Submit</button>
+                            <button className='btn rounded-0 rounded-end py-2 px-1 border-0' type="submit">Submit</button>
                         </form>
+
+                        <p className='mt-3'>Lorem ipsum dolor sit amet, consectectur adipiscing elit, sed do eiusmod tempo</p>
+                        <div className="d-flex gap-4 align-items-center justify-content-center">
+                            <div className="facebook "><FaFacebook size={20} color='purple' />
+                            </div>
+                            <div className="twitter"><FaTwitter size={20} color='purple' />
+                            </div>
+                            <div className="instagram"><FaInstagramSquare size={20} color='purple' />
+                            </div>
+                            <div className="youtube"><FaYoutube size={20} color='purple' />
+                            </div>
+                        </div>
 
 
 

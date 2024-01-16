@@ -41,4 +41,25 @@ body{
 color: white; 
 font-size: 14.5px !important;
 }
- 
+ .image-container {
+  position: relative;
+
+}
+
+.background-image {
+  width: 75% !important;
+  height: 80vh !important;
+    left: 0;
+      position: absolute;
+  object-fit: cover; 
+}
+
+.overlay-image {
+  position: absolute;
+  top:40px;
+  right: 0;
+
+  width: 70%;
+  height: 70vh;
+}
+
