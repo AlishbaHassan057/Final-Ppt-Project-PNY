@@ -8,7 +8,7 @@ const Pricing = () => {
     useEffect(() => {
         AOS.init({
             duration: 1000,
-            once: true, // Set to true if you want the animation to occur only once
+            once: true,
         });
     }, []);
 
@@ -28,121 +28,128 @@ const Pricing = () => {
                     {/* Cards */}
                     <div className="container d-flex align-items-center justify-content-around" style={{ width: '82%' }}>
                         {/* card-1 */}
-                        <div className="col-lg-3 mx-auto" data-aos="fade-up">
-                            <div className="card-1 dt mb-5 card d-flex flex-column align-items-center justify-content-center gap-2 mx-auto">
-                                <h4 className='mt-0'>BIRTHDAY PARTY</h4>
-                                <h2 className='p'>$145</h2>
-                                <ul className='mb-5 list-unstyled'>
+                        <div className="col-lg-3" data-aos="fade-up">
+                            <div className="card-1 dt mb-5 card d-flex flex-column align-items-center justify-content-center gap-2">
+                                <h4 className='mt-0 fw-bold'>BIRTHDAY PARTY</h4>
+                                <h2 className='p fw-bold'>$145</h2>
+                                <ul className='list-unstyled'>
                                     <div className="row py-1 justify-content-start align-items-center ">
-                                        <div className="col-lg-2"><FaCheckCircle /></div>
-                                        <div className="col-lg-10">
+                                        <div className="col-lg-1"><FaCheckCircle /></div>
+                                        <div className="col-lg-6">
                                             <li> 6 Hours</li></div></div>
                                     <div className="row py-1 justify-content-start align-items-center ">
                                         <div className="col-lg-2"><FaCheckCircle /></div>
-                                        <div className="col-lg-10">
+                                        <div className="col-lg-7">
                                             <li>  Decoration</li></div></div>
                                     <div className="row py-1 justify-content-start align-items-center ">
                                         <div className="col-lg-2"><FaCheckCircle /></div>
-                                        <div className="col-lg-10">
-                                            <li>  Photographer</li></div></div>
+                                        <div className="col-lg-8">
+                                            <li>Photographer</li></div></div>
                                     <div className="row py-1 justify-content-start align-items-center ">
-                                        <div className="col-lg-2"><FaCheckCircle /></div>
-                                        <div className="col-lg-10">
-                                            <li>  Entertainment</li></div></div>
+                                        <div className="col-lg-1"><FaCheckCircle /></div>
+                                        <div className="col-lg-9">
+                                            <li>Entertainment</li></div></div>
                                     <div className="row py-1 justify-content-start align-items-center ">
-                                        <div className="col-lg-2"><FaCheckCircle /></div>
+                                        <div className="col-lg-1"> <FaCheckCircle /></div>
                                         <div className="col-lg-10">
                                             <li> Up to 20 Persons</li></div></div>
                                 </ul>
+                                <div className="rounded-2 crd-01 fw-bold">GET IN TOUCH</div>
                             </div>
                         </div>
 
                         {/* card-2 */}
-                        <div className="col-lg-3 mx-auto" data-aos="fade-down">
+                        <div className="col-lg-3 mx-auto card-container" data-aos="fade-down">
                             <div className="crds gp mb-5 card d-flex flex-column align-items-center justify-content-center gap-2 mx-auto">
-                                <h4>WEDDING PARTY</h4>
-                                <h2 className='prices'>$850</h2>
-                                <ul className='mb-5 list-unstyled'>
-                                    <div className="row py-1 justify-content-start align-items-center ">
-                                        <div className="col-lg-2"><FaCheckCircle /></div>
-                                        <div className="col-lg-10">
-                                            <li> 8 Hours</li></div></div>
-                                    <div className="row py-1 justify-content-start align-items-center ">
-                                        <div className="col-lg-2"><FaCheckCircle /></div>
-                                        <div className="col-lg-10">
-                                            <li>  Decoration</li></div></div>
-                                    <div className="row py-1 justify-content-start align-items-center ">
-                                        <div className="col-lg-2"><FaCheckCircle /></div>
-                                        <div className="col-lg-10">
-                                            <li>  Photographer</li></div></div>
-                                    <div className="row py-1 justify-content-start align-items-center ">
-                                        <div className="col-lg-2"><FaCheckCircle /></div>
-                                        <div className="col-lg-10">
-                                            <li>  Entertainment</li></div></div>
-                                    <div className="row py-1 justify-content-start align-items-center ">
-                                        <div className="col-lg-2"><FaCheckCircle /></div>
-                                        <div className="col-lg-10">
-                                            <li> Up to 100 Persons</li></div></div>
-                                </ul>
+                                <h4 className='fw-bold'>WEDDING PARTY</h4>
+                                <h2 className='prices fw-bold'>$850</h2>
+                                <div className="row">
+                                    <ul className='list-unstyled text-secondary'>
+                                        <div className="row py-1 justify-content-start align-items-center ">
+                                            <div className="col-lg-1"><FaCheckCircle /></div>
+                                            <div className="col-lg-6">
+                                                <li> 8 Hours</li></div></div>
+                                        <div className="row py-1 justify-content-start align-items-center ">
+                                            <div className="col-lg-2"><FaCheckCircle /></div>
+                                            <div className="col-lg-7">
+                                                <li>  Decoration</li></div></div>
+                                        <div className="row py-1 justify-content-start align-items-center ">
+                                            <div className="col-lg-2"><FaCheckCircle /></div>
+                                            <div className="col-lg-8">
+                                                <li>Photographer</li></div></div>
+                                        <div className="row py-1 justify-content-start align-items-center ">
+                                            <div className="col-lg-1"><FaCheckCircle /></div>
+                                            <div className="col-lg-9">
+                                                <li>Entertainment</li></div></div>
+                                        <div className="row py-1 justify-content-start align-items-center ">
+                                            <div className="col-lg-1"> <FaCheckCircle /></div>
+                                            <div className="col-lg-10">
+                                                <li> Up to 100 Persons</li></div></div>
+                                    </ul>
+                                </div>
+
+
+                                <div className="btn rounded-2 card-button fw-bold">GET IN TOUCH</div>
                             </div>
                         </div>
                         {/* card-3 */}
                         <div className="col-lg-3 mx-auto" data-aos="fade-up" data-aos-delay="200">
                             <div className="crds dt mb-5 card d-flex flex-column align-items-center justify-content-center gap-2 mx-auto">
-                                <h4>PARTY EVENTS</h4>
-                                <h2 className='prices'>$650</h2>
-                                <ul className='mb-5 list-unstyled'>
+                                <h4 className='fw-bold'>PARTY EVENTS</h4>
+                                <h2 className='prices fw-bold'>$650</h2>
+                                <ul className='list-unstyled text-secondary'>
                                     <div className="row py-1 justify-content-start align-items-center ">
-                                        <div className="col-lg-2"><FaCheckCircle /></div>
-                                        <div className="col-lg-10">
+                                        <div className="col-lg-1"><FaCheckCircle /></div>
+                                        <div className="col-lg-6">
                                             <li> 8 Hours</li></div></div>
                                     <div className="row py-1 justify-content-start align-items-center ">
                                         <div className="col-lg-2"><FaCheckCircle /></div>
-                                        <div className="col-lg-10">
+                                        <div className="col-lg-7">
                                             <li>  Decoration</li></div></div>
                                     <div className="row py-1 justify-content-start align-items-center ">
                                         <div className="col-lg-2"><FaCheckCircle /></div>
-                                        <div className="col-lg-10">
-                                            <li>  Photographer</li></div></div>
+                                        <div className="col-lg-8">
+                                            <li>Photographer</li></div></div>
                                     <div className="row py-1 justify-content-start align-items-center ">
-                                        <div className="col-lg-2"><FaCheckCircle /></div>
-                                        <div className="col-lg-10">
-                                            <li>  Entertainment</li></div></div>
+                                        <div className="col-lg-1"><FaCheckCircle /></div>
+                                        <div className="col-lg-9">
+                                            <li>Entertainment</li></div></div>
                                     <div className="row py-1 justify-content-start align-items-center ">
-                                        <div className="col-lg-2"><FaCheckCircle /></div>
+                                        <div className="col-lg-1"> <FaCheckCircle /></div>
                                         <div className="col-lg-10">
                                             <li> Up to 100 Persons</li></div></div>
                                 </ul>
+                                <div className="btn rounded-2 card-button fw-bold">GET IN TOUCH</div>
                             </div>
                         </div>
                         {/* card-4 */}
                         <div className="col-lg-3 mx-auto" data-aos="fade-down">
-
-                            <div className="crds gp  mb-5 card d-flex flex-column align-items-center justify-content-center gap-2 mx-auto">
-                                <h4>BIRTHDAY PARTY</h4>
-                                <h2 className='prices'>$1200</h2>
-                                <ul className='mb-5 list-unstyled'>
+                            <div className="crds gp card d-flex flex-column align-items-center justify-content-center gap-2 mx-auto">
+                                <h4 className='fw-bold'>FESTIVAL EVENTS</h4>
+                                <h2 className='prices fw-bold'>$1200</h2>
+                                <ul className='list-unstyled text-secondary'>
+                                    <div className="row py-1 justify-content-start align-items-center ">
+                                        <div className="col-lg-1"><FaCheckCircle /></div>
+                                        <div className="col-lg-6">
+                                            <li> 12 Hours</li></div></div>
                                     <div className="row py-1 justify-content-start align-items-center ">
                                         <div className="col-lg-2"><FaCheckCircle /></div>
-                                        <div className="col-lg-10">
-                                            <li> 12 hours</li></div></div>
-                                    <div className="row py-1 justify-content-start align-items-center ">
-                                        <div className="col-lg-2"><FaCheckCircle /></div>
-                                        <div className="col-lg-10">
+                                        <div className="col-lg-7">
                                             <li>  Decoration</li></div></div>
                                     <div className="row py-1 justify-content-start align-items-center ">
                                         <div className="col-lg-2"><FaCheckCircle /></div>
-                                        <div className="col-lg-10">
-                                            <li>  Photographer</li></div></div>
+                                        <div className="col-lg-8">
+                                            <li>Photographer</li></div></div>
                                     <div className="row py-1 justify-content-start align-items-center ">
-                                        <div className="col-lg-2"><FaCheckCircle /></div>
-                                        <div className="col-lg-10">
-                                            <li>  Entertainment</li></div></div>
+                                        <div className="col-lg-1"><FaCheckCircle /></div>
+                                        <div className="col-lg-9">
+                                            <li>Entertainment</li></div></div>
                                     <div className="row py-1 justify-content-start align-items-center ">
-                                        <div className="col-lg-2"><FaCheckCircle /></div>
+                                        <div className="col-lg-1"> <FaCheckCircle /></div>
                                         <div className="col-lg-10">
                                             <li> Up to 500 Persons</li></div></div>
                                 </ul>
+                                <div className="btn card-button fw-bold mt-0 rounded-2 ">GET IN TOUCH</div>
                             </div>
                         </div>
                     </div>

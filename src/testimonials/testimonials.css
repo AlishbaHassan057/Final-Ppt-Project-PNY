@@ -1,0 +1,11 @@
+.testimonials{
+    width: 70% !important;
+    margin: auto;
+}
+.btn {
+  background: linear-gradient(to top right,#AB2EF3,#C327F9, #D025FD) !important;
+}
+.testimonials-h{
+    color: #CC25FB;
+    font-weight: bold;
+}

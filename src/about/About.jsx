@@ -16,7 +16,7 @@ const About = () => {
                 <div className="row gap-4">
                     {/* MAIN- LEFT-SIDE */}
                     <div className="col-lg-6">
-                        <img style={{ width: '100%', height: '110%', objectFit: 'cover' }} src='https://swankeventsboston.com/wp-content/uploads/2019/07/swank-events-boston-gallery-17.png' />
+                        <img style={{ width: '100%', height: '110%', objectFit: 'cover' }} src='https://www.southernliving.com/thmb/PIbRKlcjV37CRSO7jdaSqwHx1zs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/gettyimages-860634842-2000-d5a637db1148410da0ca5287bfc63949.jpg' />
                     </div>
 
                     {/* MAIN-RIGHT-SIDE */}

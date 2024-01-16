@@ -9,13 +9,17 @@
 color: white; /
 }
 
-.brand img{
-    display: inline;
-width:50%;
-}
 .a{
     display: none;
 }
 body{
   font-family: 'Manrope' , 'sans-serif' ;
+}
+
+.nav-w{
+    width: 85%;
+    margin: auto;
+}
+.nav-home{
+    margin-left: 120px !important;
 }

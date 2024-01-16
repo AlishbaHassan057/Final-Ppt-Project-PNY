@@ -10,7 +10,9 @@ body{
 .about-card {
   height: 320px;
   width: 330px !important;
-  border: none !important;
+  border: none !important; 
+  position: relative;
+  background-color: #F3F1F5;
 }
 .unstyled-link {
     text-decoration: none; 

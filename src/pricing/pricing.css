@@ -25,3 +25,24 @@
     body{
   font-family: 'Manrope' , 'sans-serif' ;
 }
+.card-button {
+  background: linear-gradient(to right, #AB2EF3, #C129F9, #C926FB);
+  color: white;
+  padding: 12px 32px !important;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem !important;
+}
+
+.crd-01 {
+  color: #C129F9;
+  background: white;
+  padding: 12px 32px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem !important;
+  letter-spacing: 2px; 
+}
+.pricing{
+    background: #F3F1F5;
+}

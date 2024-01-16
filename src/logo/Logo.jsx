@@ -28,7 +28,7 @@ const Logo = () => {
 
     return (
         <>
-            <div className="bg-logo container-fluid mb-5">
+            <div className="bg-logo container-fluid mb-5 mt-5">
                 <div className="container w-75 mx-auto text-center">
                     <Slider {...settings}>
                         {logos.map((logo, index) => (

@@ -11,6 +11,9 @@ import Footer from "./footer/Footer";
 import PasteBoard from "./pasteboard/PasteBoard";
 import Navbar from "./navbar/Navbar";
 import Join from "./join/Join";
+import Upcoming from "./upcoming/Upcoming";
+import Testimonials from "./testimonials/Testimonials";
+import Blogs from "./blog/Blogs";
 
 function App() {
   return (
@@ -27,10 +30,13 @@ function App() {
                 <About />
                 <Cards />
                 <Experience />
+                <Upcoming />
                 <Logo />
                 <Team />
                 <Pricing />
+                <Testimonials />
                 <Join />
+                <Blogs />
                 <Footer />
               </>
             }

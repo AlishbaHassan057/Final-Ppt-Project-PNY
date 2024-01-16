@@ -26,8 +26,8 @@ const YourComponent = () => {
                     </div>
                 </div>
 
-                <div className="container col-lg-10 d-block mx-auto ">
-                    <div className="row">
+                <div className="cards-three container col-lg-10 d-block mx-auto ">
+                    <div className="row cards-three">
                         <SubCard />
                     </div>
                 </div>

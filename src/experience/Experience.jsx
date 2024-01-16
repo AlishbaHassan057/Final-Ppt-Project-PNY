@@ -21,8 +21,8 @@ const Experience = () => {
 
     return (
         <>
-            <div className="container-fluid exp-img">
-                <div className="pro row  mb-5 mx-auto text-center text-white align-items-center justify-content-around">
+            <div className="container-fluid exp-img mt-5">
+                <div className="pro row  mb-5 mx-auto text-center text-white align-items-center justify-content-around mt-5">
                     <div className="col-lg-3 mt-5" data-aos="fade-up">
                         <div className="pro d-flex flex-column justify-content-start align-items-center mx-auto text-center text-white mt-2">
                             <PiHandshakeFill size={50} color='purple' />

@@ -1,16 +1,12 @@
-.shared-bg {
-    background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZXZlbnR8ZW58MHx8MHx8fDA%3D');
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 800px; 
-
-}
 .carousel-item img{
      background-size: cover; 
 
 }
+.carousel-img{
+    height: 100vh !important;
+}
+
+
 .carousel-caption{
     top: 200px !important;
     left: 180px !important;
@@ -18,11 +14,18 @@
 .btn {
     background: linear-gradient(to right top, #A52FF1, #BB2AF7, #CC26FC, #D025FC) !important;
 color: white; 
+
 }
 .imgs{
-        top: 50px !important;
+        top: 100px !important;
     left: 180px !important;
 
+}
+.button1{
+    margin-top: 150px !important;
+}
+.button2{
+    margin-top: 150px !important;
 }
 .btns{
     font-weight: bold;
@@ -30,6 +33,7 @@ color: white;
     font-size: 1.3rem !important;
     border: none !important;
     background: transparent !important;
+    top: 300px;
 }
 body{
   font-family: 'Manrope' , 'sans-serif' ;
