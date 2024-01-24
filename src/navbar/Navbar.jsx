@@ -20,9 +20,13 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="d-flex align-items-center justify-content-between mb-3 mt-4 gap-4">
+                        <Link to="/login">
+                            <div>Sign Up</div>
+                        </Link>
+
                         <div><FaSearch size={20} /></div>
                         <div className="button">
-                            {/* Use Link for navigation */}
+
                             <Link to="/contact">
                                 <button className="btn text-light px-4 rounded-3 fw-bold"> CONTACT US</button>
                             </Link>

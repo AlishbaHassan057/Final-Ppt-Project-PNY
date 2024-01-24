@@ -4,6 +4,9 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import { PiMapPinFill } from "react-icons/pi";
+
+
 
 
 
@@ -30,7 +33,15 @@ const Footer = () => {
                     <div className="col-lg-3 footer-logo mt-5">
                         <h5 className='foot-bottom'>EVENIZER</h5>
                         <p>Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod</p>
-                        <p>Jl. Sunset Road No.815, Kuta</p>
+                        <div className="row">
+                            <div className="custom col-lg-1 p-0 ms-0">
+                                <PiMapPinFill size={20} />
+                            </div>
+                            <div className=" col-lg-10 p-0 ms-0">
+                                <p className='custom1'>Jl. Sunset Road No.815, Kuta</p>
+                            </div>
+                        </div>
+
                         <p>evenizer@domain.com</p>
                         <p>(+62) 81 2345 1234</p>
                     </div>

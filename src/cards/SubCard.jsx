@@ -1,5 +1,3 @@
-// SubCard.js
-
 import React from 'react';
 import { MdCelebration } from 'react-icons/md';
 import { FaCameraRetro } from 'react-icons/fa';

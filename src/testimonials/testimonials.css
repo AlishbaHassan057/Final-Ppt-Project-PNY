@@ -9,3 +9,20 @@
     color: #CC25FB;
     font-weight: bold;
 }
+.reviews-slider {
+  display: flex;
+  overflow: hidden;
+}
+
+.review {
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.review.active {
+  opacity: 1;
+}
+.reviews-container{
+  height: 20rem !important;
+}

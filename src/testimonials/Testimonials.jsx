@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import './testimonials.css'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import Reviews from './Reviews';
 
 const Testimonials = () => {
     useEffect(() => {
@@ -23,7 +24,9 @@ const Testimonials = () => {
                         <p className='col-lg-12'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <button className='btn  rounded-2'> SEE MORE</button>
                     </div>
-                    <div className="col-lg-6"></div>
+                    <div className="reviews-container col-lg-6 bg-light rounded-2">
+                        <Reviews />
+                    </div>
                 </div>
             </div>
 

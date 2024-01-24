@@ -14,6 +14,8 @@ import Join from "./join/Join";
 import Upcoming from "./upcoming/Upcoming";
 import Testimonials from "./testimonials/Testimonials";
 import Blogs from "./blog/Blogs";
+import Login from "./login/Login";
+import Admin from "./admin/Admin";
 
 function App() {
   return (
@@ -42,6 +44,8 @@ function App() {
             }
           />
           <Route path="/contact" element={<Contacts />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </Router>
     </>
