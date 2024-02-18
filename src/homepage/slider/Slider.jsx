@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import './Home.css';
+import './slider.css'
 import { MdOutlinePlayCircle } from "react-icons/md";
 import { FaSearch } from "react-icons/fa";
 import 'aos/dist/aos.css';
@@ -9,7 +9,7 @@ import AOS from 'aos';
 
 
 AOS.init();
-const HomePage = () => {
+const Slider = () => {
     return (
         <>
             <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel ">
@@ -85,5 +85,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
-
+export default Slider;

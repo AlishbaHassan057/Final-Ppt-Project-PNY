@@ -1,0 +1,36 @@
+body{
+    /* background:#F0F2F5; */
+    background: #F7F7F7;
+}
+/* .signupi{
+    margin-top: -2.5rem !important;
+} */
+
+.log{
+    margin-top: 9rem !important;
+} 
+/* .logg{
+    height: 25rem !important;
+} */
+.facebookbtn{
+    background: #2D64B0!important;
+}
+input:focus{
+    box-shadow: 0 0 0 0 !important;
+}
+.logo{
+    margin-top: -1.2rem !important;
+}
+/* .main{
+    padding: 90rem !important;
+} */
+.underline {
+  text-decoration: underline;
+}
+.forget{
+    margin-left: 0px !important;
+}
+.btn{
+     background: linear-gradient(to right top, #A52FF1, #BB2AF7, #CC26FC, #D025FC) !important;
+color: white; 
+}
