@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addNewBlog } from "./blogSlice";
+import { addNewBlog } from "../redux/features/blog/blogSlice";
 
 const AddBlog = () => {
   const dispatch = useDispatch();
@@ -22,9 +22,9 @@ const AddBlog = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!formData.title || !formData.dated || !formData.description) {
-      // Handle form validation, if needed
       return;
     }
+
     dispatch(addNewBlog(formData));
 
     setFormData({
