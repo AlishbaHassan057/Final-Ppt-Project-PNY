@@ -11,7 +11,7 @@ import PasteBoard from "./pasteboard/PasteBoard";
 import Navbar from "./navbar/Navbar";
 import Join from "./join/Join";
 import Upcoming from "./upcoming/Upcoming";
-import Blogs from "./blog/Blogs";
+
 import Testimonials from "./testimonials/Testimonials";
 
 const HomeMain = () => {
@@ -29,7 +29,7 @@ const HomeMain = () => {
             <Pricing />
             <Testimonials />
             <Join />
-            <Blogs />
+
             <Footer />
 
         </div>

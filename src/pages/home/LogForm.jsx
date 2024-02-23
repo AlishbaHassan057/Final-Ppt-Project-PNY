@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-
-
-
+import { NavLink } from 'react-router-dom';
 
 const LogForm = ({ setOpen }) => {
     const [username, setUsername] = useState('');
@@ -10,11 +8,14 @@ const LogForm = ({ setOpen }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Submitted:', { username, password });
+        // You can perform any necessary actions here before navigating
     };
+
     return (
         <>
+
             <form onSubmit={handleSubmit} className='w-75 rounded shadow p-3 py-4 bg-white '>
-                <h2 className='mt-1'>LOG IN</h2>
+                <img width={'200px'} src='https://www.gpssultanpur.com/MSMS/Images/admin_login.gif' />
 
                 <input
                     className='form-control mt-3'
@@ -35,18 +36,17 @@ const LogForm = ({ setOpen }) => {
                         required
                     />
                 </div>
-                <div>
-                    <button className='btn mt-3 w-100 text-white fw-bold' type="submit">Log in</button>
-                </div>
+
+                {/* Use NavLink to navigate to /admindashboard */}
+                <NavLink to="/admindashboard" className="btn mt-3 w-100 text-white fw-bold">
+                    Log in
+                </NavLink>
+
                 <p className='forget mt-2 mb-0 text-secondary me-0'>Forget Password?</p>
-                <p className='mt-2 fw-normal'>Don't have an account? <span><a onClick={() => setOpen(true)} href="#" style={{ textDecoration: 'none' }}>Sign Up</a></span></p>
-
-
-
-            </form >
-
+                <p className='mt-2 fw-normal'>Are you a new Admin? <span><a onClick={() => setOpen(true)} href="#" style={{ textDecoration: 'none' }}>Sign Up</a></span></p>
+            </form>
         </>
-    )
-}
+    );
+};
 
-export default LogForm
+export default LogForm;

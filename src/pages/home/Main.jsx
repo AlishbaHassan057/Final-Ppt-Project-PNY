@@ -15,7 +15,7 @@ const Main = () => {
                             <img
                                 width={'90%'}
                                 style={{ height: '100vh', objectFit: 'contain' }}
-                                src='https://img.freepik.com/free-vector/website-user-login-page-template-design_1017-30786.jpg'
+                                src='https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?size=626&ext=jpg&ga=GA1.1.572023653.1706097989&semt=ais'
                             />
                         </div>
 

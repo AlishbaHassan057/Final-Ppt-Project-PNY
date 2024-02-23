@@ -23,3 +23,108 @@ body{
 .nav-home{
     margin-left: 120px !important;
 }
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.sidebar li {
+    color: #fff;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .sidebar {
+        display: none;
+    }
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.sidebar li {
+    color: #fff;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .nav-w {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-brand {
+    order: 1; /* Move logo brand to the first position */
+  }
+
+  .hamburger-icon {
+    order: 3; /* Move hamburger icon to the last position */
+  }
+
+  .regular-items {
+    display: none; /* Hide regular items */
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px; /* Adjust sidebar width as needed */
+    background-color: #333; /* Add background color */
+    padding: 20px; /* Add padding */
+    z-index: 1000; /* Ensure sidebar appears above other content */
+  }
+
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+
+  .sidebar li a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
