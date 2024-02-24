@@ -21,17 +21,13 @@ const AddBlog = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!formData.title || !formData.dated || !formData.description) {
-      return;
-    }
-
-    dispatch(addNewBlog(formData));
-
-    setFormData({
-      title: "",
-      dated: "",
-      description: "",
-    });
+    const postBlog = {
+      title,
+      dated,
+      description,
+    };
+    dispatch(addNewBlog(postBlog));
+    props.history.push("/");
   };
 
   return (

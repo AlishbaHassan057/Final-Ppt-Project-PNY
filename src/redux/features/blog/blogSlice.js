@@ -6,7 +6,7 @@ const initialState = {
   error: false,
   success: false,
   message: "",
-  data: null, // To hold the blog data
+  data: null,
 };
 
 export const addNewBlog = createAsyncThunk(
