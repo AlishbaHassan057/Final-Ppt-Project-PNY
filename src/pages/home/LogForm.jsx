@@ -1,52 +1,99 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { NavLink } from "react-router-dom";
+import { toast } from "react-toastify";
+import { login } from "../../redux/features/auth/authSlice";
 
 const LogForm = ({ setOpen }) => {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+  const { isError, message, isSuccess } = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('Submitted:', { username, password });
-        // You can perform any necessary actions here before navigating
-    };
+  const [formFields, setFormFields] = useState({
+    p_mail: "",
+    password: "",
+  });
 
-    return (
-        <>
+  const { p_mail, password } = formFields;
 
-            <form onSubmit={handleSubmit} className='w-75 rounded shadow p-3 py-4 bg-white '>
-                <img width={'200px'} src='https://www.gpssultanpur.com/MSMS/Images/admin_login.gif' />
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormFields((prevFields) => ({
+      ...prevFields,
+      [name]: value,
+    }));
+  };
 
-                <input
-                    className='form-control mt-3'
-                    type="text"
-                    placeholder="Phone Number, username, or email"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                    required
-                />
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!p_mail || !password) {
+      toast.error("Please enter all fields!");
+    } else {
+      if (isError) {
+        toast.error(message);
+      }
+      const userData = {
+        p_mail,
+        password,
+      };
+      dispatch(login(userData));
+    }
+  };
+  useEffect(() => {
+    // If isSuccess is true, navigate to "/admin"
+    if (isSuccess) {
+      navigate("/admin");
+    }
+  }, [isSuccess]);
 
-                <div>
-                    <input
-                        className='form-control mt-3'
-                        type="password"
-                        placeholder="Password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        required
-                    />
-                </div>
+  return (
+    <>
+      <form className="w-75 rounded shadow p-3 py-4 bg-white ">
+        <img
+          width={"200px"}
+          src="https://www.gpssultanpur.com/MSMS/Images/admin_login.gif"
+        />
 
-                {/* Use NavLink to navigate to /admindashboard */}
-                <NavLink to="/admindashboard" className="btn mt-3 w-100 text-white fw-bold">
-                    Log in
-                </NavLink>
+        <input
+          className="form-control mt-3"
+          type="email"
+          name="p_mail"
+          placeholder="Enter Your Email Address"
+          value={p_mail}
+          onChange={handleChange}
+          required
+        />
 
-                <p className='forget mt-2 mb-0 text-secondary me-0'>Forget Password?</p>
-                <p className='mt-2 fw-normal'>Are you a new Admin? <span><a onClick={() => setOpen(true)} href="#" style={{ textDecoration: 'none' }}>Sign Up</a></span></p>
-            </form>
-        </>
-    );
+        <div>
+          <input
+            className="form-control mt-3"
+            name="password"
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <button onClick={handleSubmit} className="btn mt-4">
+          LOGIN
+        </button>
+
+        <p className="forget mt-2 mb-0 text-secondary me-0">Forget Password?</p>
+        <p className="mt-2 fw-normal">
+          Are you a new Admin?{" "}
+          <span>
+            <a
+              onClick={() => setOpen(true)}
+              href="#"
+              style={{ textDecoration: "none" }}
+            >
+              Sign Up
+            </a>
+          </span>
+        </p>
+      </form>
+    </>
+  );
 };
 
 export default LogForm;

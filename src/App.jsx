@@ -6,18 +6,18 @@ import HomeMain from "./homepage/HomeMain";
 import AboutUs from "./aboutus/AboutUs";
 import Services from "./services/Services";
 import Blog from "./blog/Blog";
-
 import AdminDashboard from "./dashboard/AdminDashboard";
-import AddBlog from "./add.blog/AddBlog";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
     <>
       <Router>
+        <ToastContainer />
         <Routes>
           <Route path="/" element={<HomeMain />} />
           <Route path="/admin" element={<AdminDashboard />} />
-          <Route path="/add-blog" element={<AddBlog />} />
+
           <Route path="/blog" element={<Blog />} />
 
           <Route path="/aboutus" element={<AboutUs />} />

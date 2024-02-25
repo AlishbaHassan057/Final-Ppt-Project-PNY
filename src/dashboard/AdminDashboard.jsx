@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
+import "./dashboard.css";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { logOut } from "../redux/features/auth/authSlice";
 
 const AdminDashBoard = () => {
+  const { user } = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    dispatch(logOut());
+    navigate("/login");
+  };
+
+  useEffect(() => {
+    if (!user) {
+      navigate("/"); // Navigate to the root if user is not logged in
+    }
+  }, [user, navigate]);
+
   return (
     <>
-      <div className="d-flex align-items-center justify-content-between">
+      <div className="d-flex  justify-content-between">
         <div className="sidebarr">
           <div
             className=""
@@ -28,7 +47,9 @@ const AdminDashBoard = () => {
           </div>
         </div>
         <div className="articles">
-          <h1>Hello</h1>
+          <button onClick={handleLogout} className="logout-button">
+            LOGOUT
+          </button>
         </div>
       </div>
     </>
