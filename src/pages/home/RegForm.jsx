@@ -103,13 +103,15 @@ const RegForm = ({ setOpen }) => {
 
   return (
     <div
-      className="container d-flex align-items-center justify-content-center mx-auto"
+      className="container-fluid d-flex align-items-center justify-content-center"
       style={{
         height: "100%",
         width: "100%",
         background: "rgba(255 , 255 , 255, 0.7)",
         position: "fixed",
         top: "0",
+        right: "0",
+        left: "0",
         zIndex: "22",
       }}
     >
@@ -232,7 +234,7 @@ const RegForm = ({ setOpen }) => {
             By signing up, you agree to our Terms & Privacy Policy{" "}
           </p>
           <button
-            className="btn clo d-block text-white fw-bold mb-3"
+            className="btn d-block mx-auto mt-2 w-100 clo d-block text-white fw-bold mb-3"
             onClick={handleClick}
           >
             Sign Up

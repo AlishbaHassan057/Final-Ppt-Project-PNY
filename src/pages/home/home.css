@@ -1,17 +1,16 @@
 body {
-  /* background:#F0F2F5; */
   background: #f7f7f7;
 }
-/* .signupi{
-    margin-top: -2.5rem !important;
-} */
+
+.loginbox {
+  background: transparent;
+}
 
 .log {
-  margin-top: 9rem !important;
+  margin-top: 5rem !important;
+  margin-right: 20rem !important;
 }
-/* .logg{
-    height: 25rem !important;
-} */
+
 .facebookbtn {
   background: #2d64b0 !important;
 }
@@ -41,6 +40,24 @@ input:focus {
   color: white;
 }
 
-.clo {
-  width: 100% !important;
+/* Apply background only to the login form page */
+.body-login-form {
+  background: url("https://img.freepik.com/free-vector/purple-abstract-background_1393-310.jpg?w=360");
+  background-size: cover;
+  background-position: center;
+}
+
+.loginbox {
+  background: transparent;
+}
+
+.log {
+  margin-top: 5rem !important;
+  margin-right: 20rem !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .row.col-lg-5 {
+    width: 50%; /* Set the width to 50% on medium screens */
+  }
 }

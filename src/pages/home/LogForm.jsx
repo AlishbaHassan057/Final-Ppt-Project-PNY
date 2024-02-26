@@ -47,7 +47,7 @@ const LogForm = ({ setOpen }) => {
 
   return (
     <>
-      <form className="w-75 rounded shadow p-3 py-4 bg-white ">
+      <form className=" w-75 rounded shadow p-3 py-4 bg-white ">
         <img
           width={"200px"}
           src="https://www.gpssultanpur.com/MSMS/Images/admin_login.gif"

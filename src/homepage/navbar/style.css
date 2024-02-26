@@ -45,43 +45,6 @@ body{
     text-decoration: none;
 }
 
-@media (min-width: 768px) {
-    .sidebar {
-        display: none;
-    }
-}
-@media (min-width: 320px) and (max-width: 767px) {
-    .sidebar {
-        display: none;
-    }
-}
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 100%;
-    background-color: #333;
-    padding: 20px;
-    z-index: 1000;
-}
-
-.sidebar li {
-    color: #fff;
-    list-style: none;
-    padding: 10px 0;
-}
-
-.sidebar a {
-    color: #fff;
-    text-decoration: none;
-}
-
-@media (min-width: 768px) {
-    .sidebar {
-        display: none;
-    }
-}
 @media (min-width: 576px) and (max-width: 767.98px) {
   .nav-w {
     display: flex;
@@ -90,15 +53,16 @@ body{
   }
 
   .logo-brand {
-    order: 1; /* Move logo brand to the first position */
+    display: flex;
+    align-items: center;
   }
 
   .hamburger-icon {
-    order: 3; /* Move hamburger icon to the last position */
+    order: 3;
   }
 
   .regular-items {
-    display: none; /* Hide regular items */
+    display: none;
   }
 
   .sidebar {
@@ -106,10 +70,10 @@ body{
     top: 0;
     right: 0;
     bottom: 0;
-    width: 200px; /* Adjust sidebar width as needed */
-    background-color: #333; /* Add background color */
-    padding: 20px; /* Add padding */
-    z-index: 1000; /* Ensure sidebar appears above other content */
+    width: 200px;
+    background-color: #333;
+    padding: 20px;
+    z-index: 1000;
   }
 
   .sidebar ul {
@@ -126,4 +90,34 @@ body{
     color: white;
     text-decoration: none;
   }
+
+  .navlinks {
+    display: none;
+  }
 }
+.blurred-background {
+  filter: blur(5px); /* Adjust the blur intensity as needed */
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.sidebar li {
+  color: #fff;
+  list-style: none;
+  padding: 10px 0;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+

@@ -13,7 +13,7 @@ const Services = () => {
       {" "}
       <Navbar />
       <div className="services-container">
-        <h1 className="services-text display-6">SERVICES</h1>
+        <h1 className="services-text display-6 fw-bold">SERVICES</h1>
       </div>
       <Cards />
       <Experience />
