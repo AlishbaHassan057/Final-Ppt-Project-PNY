@@ -7,6 +7,7 @@ const initialState = {
   success: false,
   message: "",
   blogs: [],
+  images: [],
 };
 
 export const addNewBlog = createAsyncThunk(
@@ -35,6 +36,24 @@ export const getBlogData = createAsyncThunk(
       return await blogService.getBlogs();
     } catch (error) {
       thunkAPI.rejectWithValue(error.response.data.error);
+    }
+  }
+);
+// Image
+export const blogImage = createAsyncThunk(
+  "blogs/image-Blog",
+  async (imgData, thunkAPI) => {
+    try {
+      return await blogService.postImage(imgData);
+    } catch (error) {
+      if (error.response && error.response.data && error.response.data.error) {
+        const message = error.response.data.error;
+        return thunkAPI.rejectWithValue(message);
+      } else {
+        return thunkAPI.rejectWithValue(
+          "An error occurred during the blog addition process"
+        );
+      }
     }
   }
 );
@@ -74,6 +93,19 @@ const blogSlice = createSlice({
         state.blogs = action.payload;
       })
       .addCase(getBlogData.rejected, (state, action) => {
+        state.loading = false;
+        state.error = true;
+        state.message = action.payload;
+      })
+      .addCase(blogImage.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(blogImage.fulfilled, (state, action) => {
+        state.loading = false;
+        state.success = true;
+        state.images.push(action.payload);
+      })
+      .addCase(blogImage.rejected, (state, action) => {
         state.loading = false;
         state.error = true;
         state.message = action.payload;

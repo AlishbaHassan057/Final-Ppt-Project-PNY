@@ -54,7 +54,7 @@ const LogForm = ({ setOpen }) => {
         />
 
         <input
-          className="form-control mt-3"
+          className="form-control mt-3 border-0"
           type="email"
           name="p_mail"
           placeholder="Enter Your Email Address"

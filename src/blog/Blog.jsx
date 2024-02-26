@@ -7,7 +7,6 @@ import { getBlogData } from "../redux/features/blog/blogSlice";
 
 const Blog = () => {
   const dispatch = useDispatch();
-
   const { blogs, loading } = useSelector((state) => state.blog);
 
   useEffect(() => {

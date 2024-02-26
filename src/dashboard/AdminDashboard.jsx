@@ -22,7 +22,7 @@ const AdminDashBoard = () => {
 
   return (
     <>
-      <div className="d-flex  justify-content-between">
+      <div className="d-flex justify-content-between">
         <div className="sidebarr">
           <div
             className=""
@@ -33,23 +33,54 @@ const AdminDashBoard = () => {
             }}
           >
             <h1 className="fw-bold ms-3 text-white">Welcome Admin! </h1>
-            <h3 className="fw-bold ms-3 text-white mt-3">Home</h3>
-            <h3 className="fw-bold ms-3 text-white mt-3">Add Events</h3>
+            <h1 className="fw-bold ms-3 text-white"> </h1>
+            <h3 className="fw-bold ms-3 text-white mt-3">
+              <a href="/" className="text-white text-decoration-none">
+                Home
+              </a>
+            </h3>
             <h3 className="fw-bold ms-3 text-white mt-3">
               <a href="/add-blog" className="text-white text-decoration-none">
                 Add Blogs
               </a>
             </h3>
+            <h3 className="fw-bold ms-3 text-white mt-3">
+              <a href="/services" className="text-white text-decoration-none">
+                Add Events
+              </a>
+            </h3>
 
-            <h3 className="fw-bold ms-3 text-white mt-3">Edit Blogs</h3>
-            <h3 className="fw-bold ms-3 text-white mt-3">View Reviews</h3>
-            <h3 className="fw-bold ms-3 text-white mt-3">Add Admin</h3>
+            <h3 className="fw-bold ms-3 text-white mt-3">
+              <a href="/" className="text-white text-decoration-none">
+                View Reviews
+              </a>
+            </h3>
+            <h3 className="fw-bold ms-3 text-white mt-3">
+              <a href="/login" className="text-white text-decoration-none">
+                View Reviews
+              </a>
+            </h3>
           </div>
         </div>
         <div className="articles">
-          <button onClick={handleLogout} className="logout-button">
-            LOGOUT
-          </button>
+          <div
+            className="container art shadow col-lg-12 mt-2 py-5 mx-5  text-center rounded bg-secondary text-white"
+            style={{ width: "80%" }}
+          >
+            <h2 className="fw-bold mb-3 text-center">Admin Profile</h2>
+            <h4 className="fw-bold"> {user?.f_name}</h4>
+
+            <h6 className="fw-bold">{user?.p_mail}</h6>
+
+            <h6 className="fw-bold">{user?.gender}</h6>
+
+            <button
+              onClick={handleLogout}
+              className="logout-button mt-3 d-block mx-auto"
+            >
+              LOGOUT
+            </button>
+          </div>
         </div>
       </div>
     </>

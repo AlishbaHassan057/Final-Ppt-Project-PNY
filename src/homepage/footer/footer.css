@@ -1,62 +1,52 @@
-body{
-  font-family: 'Manrope' , 'sans-serif' ;
+body {
+  font-family: "Manrope", "sans-serif";
 }
-/* .footer-head{
-  width: 80% !important;
-  margin: auto;
-} */
-/* .footer-p{
-  padding: 0% !important;
-  margin: 0 !important;
-} */
 
 input::placeholder {
-    border: 1px solid #ccc;
-    padding: 5px; 
+  border: 1px solid #ccc;
+  padding: 5px;
 }
-.img{
-  width: 1px !important;
-  margin: 1px !important;
-  padding: 1px !important;
-} 
-.footer-head {
+
+.icon-container {
+  width: 20px;
+}
+
+.footer-container {
   height: 60vh !important;
-    background-image:url('https://rare-gallery.com/uploads/posts/519043-band-blur-concert.jpg');
-    background-size: cover;  
-    background-position: center center;
+  background-image: url("https://rare-gallery.com/uploads/posts/519043-band-blur-concert.jpg");
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
- 
-
-}
-.footer-b{
-  font-size: 0.5rem !important;
-}
-.f-bottom {
-   font-size: 0.8rem !important;
-   font-size: bold !important;
-
 }
 
-.footer-w {
-   width: 80%;
-    margin: auto;
-    margin-top: 4rem !important ;
-  }
-
-  .footer-logo{
-    margin-top: 5rem !important;
-  }
-  .news{
-    margin-top: -32.5px !important;
-  }
-  .foot-bottom{
-    color:  #CC26FC;
-    font-weight: bold !important;
-  }
-  .facebook{
-    margin-left: -99px !important;
-  }
-  button {
-    border: 0 !important;
+.footer-bottom-text {
+  font-size: 0.8rem !important;
+  font-weight: bold !important;
 }
 
+.computer {
+  width: 80% !important;
+  margin: auto !important;
+  margin-top: 4rem !important;
+}
+
+.footer-item {
+  margin-top: 5rem !important;
+}
+
+.newsletter-title {
+  margin-top: -32.5px !important;
+}
+
+.footer-title {
+  color: #cc26fc;
+  font-weight: bold !important;
+}
+
+.facebook-icon {
+  margin-left: -99px !important;
+}
+
+button {
+  border: 0 !important;
+}

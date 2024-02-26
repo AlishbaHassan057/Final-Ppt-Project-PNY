@@ -53,16 +53,6 @@ const Navbar = () => {
                 <li> SERVICES</li>
               </a>
               <a
-                href="/page"
-                style={{
-                  textDecoration: "none",
-                  color: "white",
-                  cursor: "pointer",
-                }}
-              >
-                <li> PAGE</li>
-              </a>
-              <a
                 href="/blog"
                 style={{
                   textDecoration: "none",
@@ -71,6 +61,16 @@ const Navbar = () => {
                 }}
               >
                 <li> BLOGS</li>
+              </a>
+              <a
+                href="/login"
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  cursor: "pointer",
+                }}
+              >
+                <li>ADMIN</li>
               </a>
             </ul>
           </div>
@@ -98,10 +98,10 @@ const Navbar = () => {
                   <li> SERVICES</li>
                 </Link>
                 <Link to="/page" onClick={toggleSidebar}>
-                  <li> PAGE</li>
-                </Link>
-                <Link to="/blog" onClick={toggleSidebar}>
                   <li> BLOGS</li>
+                </Link>
+                <Link to="/login" onClick={toggleSidebar}>
+                  <li> SIGNUP</li>
                 </Link>
               </ul>
             </div>
@@ -109,10 +109,6 @@ const Navbar = () => {
 
           {/* Regular Navbar Items */}
           <div className="d-flex align-items-center justify-content-between mb-3 mt-4 gap-4 d-none d-lg-flex">
-            <Link to="/login">
-              <div>Sign Up</div>
-            </Link>
-
             <div>
               <FaSearch size={20} />
             </div>

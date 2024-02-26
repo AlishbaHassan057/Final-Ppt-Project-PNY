@@ -5,6 +5,7 @@ import { registerUserData } from "../../redux/features/auth/authSlice";
 import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "./reg.css";
 
 const RegForm = ({ setOpen }) => {
   const navigate = useNavigate();
@@ -130,7 +131,7 @@ const RegForm = ({ setOpen }) => {
             <input
               value={f_name}
               onChange={handleChange}
-              className="form-control my-2"
+              className="form-control my-2 border-0"
               type="text"
               name="f_name"
               placeholder="First name"
@@ -138,7 +139,7 @@ const RegForm = ({ setOpen }) => {
             <input
               value={l_name}
               onChange={handleChange}
-              className="form-control my-2"
+              className="form-control my-2 border-0"
               type="text"
               name="l_name"
               placeholder="Surname"
@@ -147,7 +148,7 @@ const RegForm = ({ setOpen }) => {
           <input
             value={p_mail}
             onChange={handleChange}
-            className="form-control my-2"
+            className="form-control my-2 border-0"
             type="text"
             name="p_mail"
             placeholder="Mobile number or email address"
@@ -155,7 +156,7 @@ const RegForm = ({ setOpen }) => {
           <input
             value={password}
             onChange={handleChange}
-            className="form-control my-2"
+            className="form-control my-2 border-0"
             type="password"
             name="password"
             placeholder="Password"
@@ -207,6 +208,7 @@ const RegForm = ({ setOpen }) => {
                 type="radio"
                 name="gender"
                 value="female"
+                border-0
                 onChange={handleChange}
                 className="form-check align-self-start mt-1"
               />
@@ -217,6 +219,7 @@ const RegForm = ({ setOpen }) => {
                 type="radio"
                 name="gender"
                 value="male"
+                border-0
                 onChange={handleChange}
                 className="form-check mt-1 align-self-start"
               />
@@ -229,7 +232,7 @@ const RegForm = ({ setOpen }) => {
             By signing up, you agree to our Terms & Privacy Policy{" "}
           </p>
           <button
-            className="btn text-white w-100 fw-bold mb-3"
+            className="btn clo d-block text-white fw-bold mb-3"
             onClick={handleClick}
           >
             Sign Up
