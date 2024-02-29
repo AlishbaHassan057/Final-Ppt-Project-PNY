@@ -3,12 +3,31 @@
   margin: auto !important ;
   margin-bottom: 2rem !important;
 } */
-
 @media only screen and (max-width: 768px) {
   .row.col-lg-5 {
     width: 50%; /* Set the width to 50% on medium screens */
   }
 }
+
+@media only screen and (min-width: 900px) {
+  .row.col-lg-5 {
+    width: 50%;
+    margin-left: 23.5rem !important;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .row.col-lg-5 {
+    margin-left: 5rem !important;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+  .row.col-lg-5 {
+    margin-left: 7rem !important;
+    width: 40%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .row.col-lg-5 {
     width: 70%; /* Adjust the width of the form container */

@@ -10,6 +10,8 @@ import AdminDashboard from "./dashboard/AdminDashboard";
 import { ToastContainer } from "react-toastify";
 import AddBlog from "./addblog/AddBlog";
 import Blog from "./blog/Blog";
+import Events from "./events/Events";
+import AddEvents from "./events/addEvents";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/add-blog" element={<AddBlog />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/add-events" element={<AddEvents />} />
 
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />

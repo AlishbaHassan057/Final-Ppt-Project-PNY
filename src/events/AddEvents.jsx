@@ -1,22 +1,23 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addNewBlog } from "../redux/features/blog/blogSlice";
+import { addNewEvent } from "../redux/features/event/eventSlice";
 import { Link } from "react-router-dom";
-import "./b.css";
+import "./e.css";
 
-const AddBlog = () => {
+function AddEvents() {
   const dispatch = useDispatch();
-
-  // State variables for form data and uploaded image
-  const [formData, setFormData] = useState({
-    title: "",
-    dated: "",
-    description: "",
-  });
   const [image, setImage] = useState(null);
   const [imagePreview, setImagePreview] = useState(null);
 
-  // Handler for input changes
+  const [formData, setFormData] = useState({
+    title: "",
+    image: "",
+    location: "",
+    dated: "",
+    time: "",
+    category: "",
+  });
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -24,7 +25,6 @@ const AddBlog = () => {
       [name]: value,
     });
   };
-
   // Handler for image upload
   const handleImageChange = (e) => {
     const file = e.target.files[0];
@@ -32,7 +32,6 @@ const AddBlog = () => {
     setImagePreview(URL.createObjectURL(file)); // Set image preview
   };
 
-  // Handler for form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -40,26 +39,30 @@ const AddBlog = () => {
     const uploadedImageUrl = await uploadImage();
 
     // Create new blog object with image URL
-    const newBlog = {
+    const newEvent = {
       title: formData.title,
       image: uploadedImageUrl,
+      location: formData.location,
       dated: formData.dated,
-      description: formData.description,
+      time: formData.time,
+      category: formData.category,
     };
 
     // Dispatch action to add new blog
-    dispatch(addNewBlog(newBlog));
+    dispatch(addNewEvent(newEvent));
 
     // Reset form and image states
     setFormData({
       title: "",
+      image: "",
+      location: "",
       dated: "",
-      description: "",
+      time: "",
+      category: "",
     });
     setImage(null);
     setImagePreview(null);
   };
-
   // Function to upload image to Cloudinary
   const uploadImage = async () => {
     if (!image) return null;
@@ -86,70 +89,87 @@ const AddBlog = () => {
 
   return (
     <div>
-      <Link to="/blog" className="btn mt-3 ms-2 ">
-        Go To Blogs
-      </Link>
+      <h2>My Form</h2>
       <form
         className="col-lg-5  px-5 py-5 mx-auto mt-3 shadow rounded-3"
         onSubmit={handleSubmit}
       >
-        <h2 className="fw-bold text-center">Add New Blog</h2>
-        <div>
-          <label className="fw-bold mt-2 fs-5">Title:</label>
+        <label className="fw-bold mt-2 fs-5">
+          Title:
           <input
             className="form-control"
             type="text"
             name="title"
             value={formData.title}
             onChange={handleChange}
-            required
           />
-        </div>
-        <div>
-          <label className="fw-bold mt-2 fs-5">Dated:</label>
+        </label>
+        <br />
+        <label className="fw-bold mt-2 fs-5">Upload Image:</label>
+        <input
+          type="file"
+          accept="image/*"
+          onChange={handleImageChange}
+          required
+        />
+        {imagePreview && (
+          <img
+            src={imagePreview}
+            alt="Uploaded"
+            style={{ width: "100px", height: "100px" }}
+          />
+        )}
+        <br />
+        <label className="fw-bold mt-2 fs-5">
+          Location:
           <input
             className="form-control"
             type="text"
+            name="location"
+            value={formData.location}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label className="fw-bold mt-2 fs-5">
+          Dated:
+          <input
+            className="form-control"
+            type="Date"
             name="dated"
             value={formData.dated}
             onChange={handleChange}
-            required
           />
-        </div>
-        <div>
-          <label className="fw-bold mt-2 fs-5">Description:</label>
-          <textarea
-            className="form-control"
-            name="description"
-            value={formData.description}
-            onChange={handleChange}
-            rows={5}
-            cols={59}
-            required
-          />
-        </div>
-        <div>
-          <label className="fw-bold mt-2 fs-5">Upload Image:</label>
+        </label>
+        <br />
+        <label className="fw-bold mt-2 fs-5">
+          Time:
           <input
-            type="file"
-            accept="image/*"
-            onChange={handleImageChange}
-            required
+            className="form-control"
+            type="text"
+            name="time"
+            value={formData.time}
+            onChange={handleChange}
           />
-          {imagePreview && (
-            <img
-              src={imagePreview}
-              alt="Uploaded"
-              style={{ width: "100px", height: "100px" }}
-            />
-          )}
-        </div>
+        </label>
+        <br />
+        <label className="fw-bold mt-2 fs-5">
+          Category:
+          <input
+            className="form-control"
+            type="text"
+            name="category"
+            value={formData.category}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
         <button type="submit" className="btn mt-2 showss">
           Submit
         </button>
       </form>
     </div>
   );
-};
+}
 
-export default AddBlog;
+export default AddEvents;

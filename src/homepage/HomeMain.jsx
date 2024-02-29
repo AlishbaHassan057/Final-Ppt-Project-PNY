@@ -10,7 +10,6 @@ import Footer from "./footer/Footer";
 import PasteBoard from "./pasteboard/PasteBoard";
 import Navbar from "./navbar/Navbar";
 import Join from "./join/Join";
-import Upcoming from "../service/upcoming/Upcoming";
 
 import Testimonials from "./testimonials/Testimonials";
 
@@ -23,7 +22,7 @@ const HomeMain = () => {
       <About />
       <Cards />
       <Experience />
-      <Upcoming />
+
       <Logo />
       <Team />
       <Pricing />

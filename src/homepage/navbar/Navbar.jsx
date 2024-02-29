@@ -1,14 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaSearch, FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./style.css";
 
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
+  const sidebarRef = useRef(null);
 
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
   };
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        setShowSidebar(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [sidebarRef]);
 
   return (
     <>
@@ -33,66 +47,139 @@ const Navbar = () => {
           <div className="regular-items d-none d-lg-flex align-items-center">
             <ul className="navlinks list-unstyled d-flex align-items-center gap-4 p-0 m-0">
               <li>
-                <Link to="/">HOME</Link>
+                <Link
+                  to="/"
+                  style={{
+                    textDecoration: "none",
+                    color: "white",
+                    fontWeight: "bold",
+                  }}
+                >
+                  HOME
+                </Link>
               </li>
               <li>
-                <Link to="/aboutus">ABOUT US</Link>
+                <Link
+                  to="/aboutus"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  ABOUT US
+                </Link>
               </li>
               <li>
-                <Link to="/services">SERVICES</Link>
+                <Link
+                  to="/service"
+                  onClick={toggleSidebar}
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  SERVCIES
+                </Link>
               </li>
               <li>
-                <Link to="/blog">BLOGS</Link>
+                <Link
+                  to="/events"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  EVENTS
+                </Link>
               </li>
               <li>
-                <Link to="/login">ADMIN</Link>
+                <Link
+                  to="/blog"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  BLOGS
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  onClick={toggleSidebar}
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  CONTACT
+                </Link>
               </li>
             </ul>
           </div>
 
           {showSidebar && (
-            <div className="sidebar">
-              <ul className="list-unstyled d-flex flex-column gap-4 p-0 m-0">
-                <li>
-                  <Link to="/" onClick={toggleSidebar}>
-                    HOME
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/aboutus" onClick={toggleSidebar}>
-                    ABOUT US
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/services" onClick={toggleSidebar}>
-                    SERVICES
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/page" onClick={toggleSidebar}>
-                    BLOGS
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/login" onClick={toggleSidebar}>
-                    SIGNUP
-                  </Link>
-                </li>
-              </ul>
-            </div>
+            <>
+              <div
+                className="vh-100 vw-100 bg-dark position-fixed top-0 left-0"
+                style={{ opacity: 0.8, filter: "blur(100px)" }}
+              ></div>
+              <div className="sidebar" ref={sidebarRef}>
+                <ul className="list-unstyled d-flex flex-column gap-4 p-0 m-0">
+                  <li>
+                    <Link
+                      to="/"
+                      onClick={toggleSidebar}
+                      style={{
+                        textDecoration: "none",
+                        color: "white",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      HOME
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/aboutus"
+                      onClick={toggleSidebar}
+                      style={{ textDecoration: "none", color: "white" }}
+                    >
+                      ABOUT US
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/services"
+                      onClick={toggleSidebar}
+                      style={{ textDecoration: "none", color: "white" }}
+                    >
+                      SERVICES
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/page"
+                      onClick={toggleSidebar}
+                      style={{ textDecoration: "none", color: "white" }}
+                    >
+                      BLOGS
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/contact"
+                      onClick={toggleSidebar}
+                      style={{ textDecoration: "none", color: "white" }}
+                    >
+                      CONTACT
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/login"
+                      onClick={toggleSidebar}
+                      style={{ textDecoration: "none", color: "white" }}
+                    >
+                      SIGNUP
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </>
           )}
 
-          <div className="d-none d-lg-flex align-items-center justify-content-between gap-4">
-            <div>
-              <FaSearch size={20} />
-            </div>
-            <div className="button">
-              <Link to="/contact">
-                <button className="btn text-light px-4 rounded-3 fw-bold">
-                  CONTACT US
-                </button>
-              </Link>
-            </div>
+          <div className="button0">
+            <Link to="/login">
+              <button className="btn laptop fs-6 rounded-3 fw-bold">
+                <span>GET</span> REGISTERED
+              </button>
+            </Link>
           </div>
         </div>
       </div>

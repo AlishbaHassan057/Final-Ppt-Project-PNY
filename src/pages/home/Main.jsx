@@ -59,7 +59,7 @@ const Main = () => {
               />
             </div> */}
           {/* </div> */}
-          <div className="col-lg-8 text-center mx-auto log">
+          <div className="col-lg-8 mx-auto log">
             <LogForm
               setOpen={setOpen}
               handleSubmit={handleSubmit}
