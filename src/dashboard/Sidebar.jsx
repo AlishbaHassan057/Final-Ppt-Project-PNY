@@ -1,4 +1,6 @@
 import React from "react";
+import { MdDashboardCustomize } from "react-icons/md";
+
 import {
   BsCart3,
   BsGrid1X2Fill,
@@ -9,66 +11,61 @@ import {
   BsMenuButtonWideFill,
   BsFillGearFill,
 } from "react-icons/bs";
-import styles from "./dash.module.css";
 
-const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
+function Sidebar({ openSidebarToggle, OpenSidebar }) {
   return (
     <aside
       id="sidebar"
-      className={openSidebarToggle ? styles["sidebar-responsive"] : ""}
+      className={openSidebarToggle ? "sidebar-responsive" : ""}
     >
-      <div className={styles["sidebar-title"]}>
-        <div className={styles["sidebar-brand"]}>
-          <BsCart3 className={`${styles.icon} ${styles.icon_header}`} /> SHOP
+      <div className="sidebar-title">
+        <div className="sidebar-brand">
+          <MdDashboardCustomize className="icon_header" /> EVENIZER
         </div>
-        <span
-          className={`${styles.icon} ${styles.close_icon}`}
-          onClick={OpenSidebar}
-        >
+        <span className="icon close_icon" onClick={OpenSidebar}>
           X
         </span>
       </div>
 
-      <ul className={styles["sidebar-list"]}>
-        <li className={styles["sidebar-list-item"]}>
+      <ul className="sidebar-list">
+        <li className="sidebar-list-item">
           <a href="">
-            <BsGrid1X2Fill className={styles.icon} /> Dashboard
+            <BsGrid1X2Fill className="icon" /> Dashboard
           </a>
         </li>
-        <li className={styles["sidebar-list-item"]}>
+        <li className="sidebar-list-item">
           <a href="">
-            <BsFillArchiveFill className={styles.icon} /> Events
+            <BsFillArchiveFill className="icon" /> Events
           </a>
         </li>
-        <li className={styles["sidebar-list-item"]}>
+        <li className="sidebar-list-item">
           <a href="">
-            <BsFillGrid3X3GapFill className={styles.icon} />
-            Upcoming Events
+            <BsFillGrid3X3GapFill className="icon" /> Upcoming Events
           </a>
         </li>
-        <li className={styles["sidebar-list-item"]}>
+        <li className="sidebar-list-item">
           <a href="">
-            <BsPeopleFill className={styles.icon} /> Registered Clients
+            <BsPeopleFill className="icon" /> Clients
           </a>
         </li>
-        <li className={styles["sidebar-list-item"]}>
+        <li className="sidebar-list-item">
           <a href="">
-            <BsListCheck className={styles.icon} /> Blogs
+            <BsListCheck className="icon" /> Blogs
           </a>
         </li>
-        <li className={styles["sidebar-list-item"]}>
+        <li className="sidebar-list-item">
           <a href="">
-            <BsMenuButtonWideFill className={styles.icon} /> Reports
+            <BsMenuButtonWideFill className="icon" /> Reports
           </a>
         </li>
-        <li className={styles["sidebar-list-item"]}>
+        <li className="sidebar-list-item">
           <a href="">
-            <BsFillGearFill className={styles.icon} /> Setting
+            <BsFillGearFill className="icon" /> Setting
           </a>
         </li>
       </ul>
     </aside>
   );
-};
+}
 
 export default Sidebar;

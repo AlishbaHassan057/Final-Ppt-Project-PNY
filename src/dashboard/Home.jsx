@@ -1,7 +1,7 @@
 import React from "react";
 import {
   BsFillArchiveFill,
-  BsFillGrid3X3GapFill,
+  BsListCheck,
   BsPeopleFill,
   BsFillBellFill,
 } from "react-icons/bs";
@@ -18,7 +18,8 @@ import {
   LineChart,
   Line,
 } from "recharts";
-const Home = () => {
+
+function Home() {
   const data = [
     {
       name: "Page A",
@@ -71,33 +72,33 @@ const Home = () => {
       </div>
 
       <div className="main-cards">
-        <div className="card">
-          <div className="card-inner text-white">
-            <h3>BLOGS</h3>
+        <div className="carddd">
+          <div className="card-inner">
+            <h3>EVENTS</h3>
             <BsFillArchiveFill className="card_icon" />
           </div>
-          <h1 className="text-white">20</h1>
+          <h1>30</h1>
         </div>
-        <div className="card">
-          <div className="card-inner text-white">
-            <h3 className="text-white">EVENTS</h3>
-            <BsFillGrid3X3GapFill className="card_icon" />
+        <div className="carddd">
+          <div className="card-inner">
+            <h3>BLOGS</h3>
+            <BsListCheck className="card_icon" />
           </div>
-          <h1 className="text-white">30</h1>
+          <h1>12</h1>
         </div>
-        <div className="card">
-          <div className="card-inner text-white">
-            <h3 className="text-white">CLIENTS</h3>
+        <div className="carddd">
+          <div className="card-inner">
+            <h3>CLIENTS</h3>
             <BsPeopleFill className="card_icon" />
           </div>
-          <h1 className="text-white">25</h1>
+          <h1>40</h1>
         </div>
-        <div className="card">
-          <div className="card-inner text-white">
-            <h3 className="text-white">ALERTS</h3>
+        <div className="carddd">
+          <div className="card-inner">
+            <h3>ALERTS</h3>
             <BsFillBellFill className="card_icon" />
           </div>
-          <h1 className="text-white">15</h1>
+          <h1>20</h1>
         </div>
       </div>
 
@@ -153,6 +154,6 @@ const Home = () => {
       </div>
     </main>
   );
-};
+}
 
 export default Home;

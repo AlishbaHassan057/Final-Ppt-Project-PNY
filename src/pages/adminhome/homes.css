@@ -61,12 +61,6 @@ input:focus {
     width: 50%; /* Set the width to 50% on medium screens */
   }
 }
-@media only screen and (min-width: 900px) {
-  .row.col-lg-5 {
-    width: 50%;
-    margin-left: 9rem !important;
-  }
-}
 .form-container {
   position: relative;
   background: rgba(255, 255, 255, 0.5); /* Adjust the transparency as needed */

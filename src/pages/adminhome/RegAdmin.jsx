@@ -2,16 +2,17 @@ import React, { useEffect, useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
 import { registerUserData } from "../../redux/features/auth/authSlice";
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "./reg.css";
+import "./regadmin.css";
+import { registerAdminData } from "../../redux/features/admin/adminSlice";
 
-const RegForm = ({ setOpen }) => {
+const RegAdmin = ({ setOpen }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { isSuccess, isLoading, user, isError, message } = useSelector(
-    (state) => state.auth
+    (state) => state.admin
   );
 
   const [formFields, setFormFields] = useState({
@@ -60,15 +61,15 @@ const RegForm = ({ setOpen }) => {
         year,
         gender,
       };
-      dispatch(registerUserData(userData));
+      dispatch(registerAdminData(userData));
       toast.success("SIGNEDUP SUCCESSFULLY");
     }
   };
   useEffect(() => {
     if (isSuccess) {
-      navigate("/add-register");
+      navigate("/admin");
     }
-  }, [isSuccess, navigate]);
+  }, [isSuccess]);
 
   const [dates, setDates] = useState([]);
   const [years, setYears] = useState([]);
@@ -258,4 +259,4 @@ const RegForm = ({ setOpen }) => {
   );
 };
 
-export default RegForm;
+export default RegAdmin;

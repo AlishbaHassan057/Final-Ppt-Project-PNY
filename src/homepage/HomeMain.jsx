@@ -1,5 +1,4 @@
 import React from "react";
-import Slider from "./slider/Slider";
 import About from "./about/About";
 import Cards from "./cards/Cards";
 import Experience from "./experience/Experience";
@@ -12,12 +11,14 @@ import Navbar from "./navbar/Navbar";
 import Join from "./join/Join";
 
 import Testimonials from "./testimonials/Testimonials";
+import Slider from "./slider/Slider";
 
 const HomeMain = () => {
   return (
     <div>
       <Navbar />
       <Slider />
+
       <PasteBoard />
       <About />
       <Cards />

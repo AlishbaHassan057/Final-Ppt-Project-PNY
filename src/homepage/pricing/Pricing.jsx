@@ -41,8 +41,8 @@ const Pricing = () => {
           >
             {/* card-1 */}
             <div className="col-lg-3" data-aos="fade-up">
-              <div className="ccc card-1 dt mb-5 card d-flex flex-column align-items-center justify-content-center gap-2">
-                <h4 className="mt-0 fw-bold">BIRTHDAY PARTY</h4>
+              <div className="ccc carrddss dt mb-5 card d-flex flex-column align-items-center justify-content-center gap-2 ">
+                <h4 className="mt-2 fw-bold">BIRTHDAY PARTY</h4>
                 <h2 className="p fw-bold">$145</h2>
                 <ul className="list-unstyled">
                   <div className="row py-1 justify-content-start align-items-center ">
@@ -87,7 +87,7 @@ const Pricing = () => {
                     </div>
                   </div>
                 </ul>
-                <div className="rounded-2 crd-01 fw-bold">GET IN TOUCH</div>
+                <div className="rounded-2 hpp fw-bold mb-2">GET IN TOUCH</div>
               </div>
             </div>
 
@@ -97,7 +97,7 @@ const Pricing = () => {
               data-aos="fade-down"
             >
               <div className="ccc crds gp mb-5 card d-flex flex-column align-items-center justify-content-center gap-2 mx-auto">
-                <h4 className="fw-bold">WEDDING PARTY</h4>
+                <h4 className="fw-bold mt-2">WEDDING PARTY</h4>
                 <h2 className="prices fw-bold">$850</h2>
                 <div className="row">
                   <ul className="list-unstyled text-secondary">
@@ -145,7 +145,7 @@ const Pricing = () => {
                   </ul>
                 </div>
 
-                <div className="btn rounded-2 card-button fw-bold">
+                <div className="btn rounded-2 card-button fw-bold mb-2">
                   GET IN TOUCH
                 </div>
               </div>
@@ -157,7 +157,7 @@ const Pricing = () => {
               data-aos-delay="200"
             >
               <div className="ccc crds dt mb-5 card d-flex flex-column align-items-center justify-content-center gap-2 mx-auto">
-                <h4 className="fw-bold">PARTY EVENTS</h4>
+                <h4 className="fw-bold mt-2">PARTY EVENTS</h4>
                 <h2 className="prices fw-bold">$650</h2>
                 <ul className="list-unstyled text-secondary">
                   <div className="row py-1 justify-content-start align-items-center ">
@@ -202,7 +202,7 @@ const Pricing = () => {
                     </div>
                   </div>
                 </ul>
-                <div className="btn rounded-2 card-button fw-bold">
+                <div className="btn rounded-2 card-button fw-bold mb-2">
                   GET IN TOUCH
                 </div>
               </div>
@@ -210,7 +210,7 @@ const Pricing = () => {
             {/* card-4 */}
             <div className="col-lg-3 mx-auto" data-aos="fade-down">
               <div className="ccc crds gp card d-flex flex-column align-items-center justify-content-center gap-2 mx-auto">
-                <h4 className="fw-bold">FESTIVAL EVENTS</h4>
+                <h4 className="fw-bold mt-2">FESTIVAL EVENTS</h4>
                 <h2 className="prices fw-bold">$1200</h2>
                 <ul className="list-unstyled text-secondary">
                   <div className="row py-1 justify-content-start align-items-center ">
@@ -255,7 +255,7 @@ const Pricing = () => {
                     </div>
                   </div>
                 </ul>
-                <div className="btn card-button fw-bold mt-0 rounded-2 ">
+                <div className="btn card-button fw-bold mt-0 rounded-2 mb-2">
                   GET IN TOUCH
                 </div>
               </div>

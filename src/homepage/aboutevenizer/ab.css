@@ -1,22 +1,24 @@
-body{
-  font-family: 'Manrope' , 'sans-serif' ;
+body {
+  font-family: "Manrope", "sans-serif";
 }
 .btn {
-    letter-spacing: 2px;
-    padding: 0.6rem 1.9rem !important;
-  }
-
+  letter-spacing: 2px;
+  padding: 0.6rem 1.9rem !important;
+}
+body {
+  overflow-x: hidden;
+}
 
 :root {
-  --root-color: #DA22FF;
+  --root-color: #da22ff;
 }
-.b{
+.b {
   color: var(--root-color);
   font-weight: bold;
 }
 
-.listed{
-   list-style-type: none
+.listed {
+  list-style-type: none;
 }
 .listed {
   list-style: none;
@@ -24,42 +26,45 @@ body{
 }
 
 .listed li {
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 .list-item-text {
-  margin-left: 18px; 
+  margin-left: 18px;
 }
 
-.box{
-  background: #F3F1F5 !important;
-
-
+.box {
+  background: #f3f1f5 !important;
 }
 .btn {
-    background: linear-gradient(to right top, #A52FF1,#A52FF1, #BB2AF7, #CC26FC, #D025FC) !important;
-color: white; 
-font-size: 14.5px !important;
+  background: linear-gradient(
+    to right top,
+    #a52ff1,
+    #a52ff1,
+    #bb2af7,
+    #cc26fc,
+    #d025fc
+  ) !important;
+  color: white;
+  font-size: 14.5px !important;
 }
- .image-container {
+.image-container {
   position: relative;
-
 }
 
 .background-image {
   width: 75% !important;
   height: 80vh !important;
-    left: 0;
-      position: absolute;
-  object-fit: cover; 
+  left: 0;
+  position: absolute;
+  object-fit: cover;
 }
 
 .overlay-image {
   position: absolute;
-  top:40px;
+  top: 40px;
   right: 0;
 
   width: 70%;
   height: 70vh;
 }
-

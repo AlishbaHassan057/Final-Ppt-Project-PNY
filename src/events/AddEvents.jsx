@@ -89,7 +89,9 @@ function AddEvents() {
 
   return (
     <div>
-      <h2>My Form</h2>
+      <Link to="/events" className="btn mt-3 ms-2 ">
+        Go To Events
+      </Link>
       <form
         className="col-lg-5  px-5 py-5 mx-auto mt-3 shadow rounded-3"
         onSubmit={handleSubmit}

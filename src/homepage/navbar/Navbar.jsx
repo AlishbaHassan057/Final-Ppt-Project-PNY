@@ -68,11 +68,11 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/service"
+                  to="/s"
                   onClick={toggleSidebar}
                   style={{ textDecoration: "none", color: "white" }}
                 >
-                  SERVCIES
+                  SERVICES
                 </Link>
               </li>
               <li>
@@ -135,7 +135,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link
-                      to="/services"
+                      to="/serv"
                       onClick={toggleSidebar}
                       style={{ textDecoration: "none", color: "white" }}
                     >
@@ -175,7 +175,7 @@ const Navbar = () => {
           )}
 
           <div className="button0">
-            <Link to="/login">
+            <Link to="/startup">
               <button className="btn laptop fs-6 rounded-3 fw-bold">
                 <span>GET</span> REGISTERED
               </button>

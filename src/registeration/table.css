@@ -1,0 +1,26 @@
+.regbtn {
+  width: 100% !important;
+  margin-top: 0 !important;
+}
+
+.etable {
+  width: 90% !important;
+  margin-top: 4rem !important;
+}
+.td {
+  border-bottom: 2px solid #000;
+}
+
+.regi {
+  background-image: url("https://img.freepik.com/premium-photo/3d-rendering-purple-black-abstract-wave-background_167650-2502.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+}
+.blur-background {
+  position: relative;
+  background: rgba(15, 15, 15, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}

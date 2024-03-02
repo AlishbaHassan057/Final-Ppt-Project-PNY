@@ -9,9 +9,9 @@ import AOS from "aos";
 const PasteBoard = () => {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 2000,
       easing: "ease-in-out",
-      once: true,
+      once: false,
     });
   }, []);
   return (

@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import { login } from "../../redux/features/auth/authSlice";
-import "./log.css";
+
+import "./logg.css";
+import { loginAdmin } from "../../redux/features/admin/adminSlice";
 
 const LogForm = ({ setOpen }) => {
-  const { isError, message, isSuccess } = useSelector((state) => state.auth);
+  const { isError, message, isSuccess } = useSelector((state) => state.admin);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -37,13 +38,13 @@ const LogForm = ({ setOpen }) => {
         p_mail,
         password,
       };
-      dispatch(login(userData));
+      dispatch(loginAdmin(userData));
     }
   };
   useEffect(() => {
     // If isSuccess is true, navigate to "/admin"
     if (isSuccess) {
-      navigate("/add-register");
+      navigate("/admin");
     }
   }, [isSuccess]);
 
